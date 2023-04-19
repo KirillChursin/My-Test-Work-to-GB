@@ -13,3 +13,12 @@ int InputValue (string message)
     return result;
 }
 
+void ArrayElementsValue (string[] array)
+{
+    for (int i = 0; i < array.Length; i++)
+    {
+        string word = Console.ReadLine();
+        array[i] = word;
+    }
+}
+
