@@ -48,3 +48,23 @@ void ValueNewArray(string[] array, string[] newArray)
     }
 }
 
+void PrintArray (string[] newArray)
+{
+    Console.Write($"[");
+    for (int i = 0; i < newArray.Length; i++)
+    {
+        if (i != newArray.Length-1)
+        {
+            Console.Write($"{newArray[i]}, ");
+        }
+        else Console.Write($"{newArray[i]}");
+    }
+    Console.Write($"]");
+}
+
+int length = InputValue($"Enter value to length first array");
+string[] firstArray = new string [length];
+ArrayElementsValue(firstArray);
+string[] arrayTaskCondidion = new string[Counter(firstArray)];
+ValueNewArray(firstArray, arrayTaskCondidion);
+PrintArray(arrayTaskCondidion);
