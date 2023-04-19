@@ -22,3 +22,29 @@ void ArrayElementsValue (string[] array)
     }
 }
 
+int Counter(string[] array)
+{
+    int count = 0;
+    for (int i = 0; i < array.Length; i++)
+    {
+        if (array[i].Length <= 3)
+        {
+            count++;
+        }
+    }
+    return count;
+}
+
+void ValueNewArray(string[] array, string[] newArray)
+{
+    int k = 0;
+    for (int i = 0; i < array.Length; i++)
+    {
+        if (array[i].Length <= 3)
+        {
+            newArray[k] = array[i];
+            k++;
+        }
+    }
+}
+
